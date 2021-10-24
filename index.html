@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Atividade 10 - Calculadora</title>
+	<script type="text/javascript" src="js/matematica.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/estilo.css"></link>
+</head>
+<body>
+	<div id="selectCor">
+		<input type="radio" id="idCadetBlue" onclick="alterarCor('CadetBlue')" name="cor" value="CadetBlue" checked> <label for="idCadetBlue">CadetBlue</label>
+		<input type="radio" id="idDeepSkyBlue" onclick="alterarCor('DeepSkyBlue')" name="cor" value="DeepSkyBlue"><label for="idDeepSkyBlue">DeepSkyBlue</label>
+		<input type="radio" id="idGoldenRod" onclick="alterarCor('GoldenRod')" name="cor" value="GoldenRod"><label for="idGoldenRod">GoldenRod</label>
+		<input type="radio" id="idHotPink" onclick="alterarCor('HotPink')" name="cor" value="HotPink"><label for="idHotPink">HotPink</label>
+		<input type="radio" id="idIndianRed" onclick="alterarCor('IndianRed')" name="cor" value="IndianRed"><label for="idIndianRed">IndianRed</label>
+		
+	</div>
+	<div id="calculadora">
+		<div id="display">
+			<div class="operacoes">
+				<div id="valor2"></div>
+				<div id="operacao"></div>
+				<div id="valor1"></div>
+			</div>
+			<div id="resultado"></div>
+		</div>
+		<table id="teclado">
+			<tr>
+				<td><button onclick="limparTela()">Clr</button></td>
+				<td><button onclick="calculadora('d')">Del</button></td>
+				<td><button onclick="calculadora('/')">/</button></td>
+				<td><button onclick="calculadora('*')">*</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="calculadora('7')">7</button></td>
+				<td><button onclick="calculadora('8')">8</button></td>
+				<td><button onclick="calculadora('9')">9</button></td>
+				<td><button onclick="calculadora('-')">-</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="calculadora('4')">4</button></td>
+				<td><button onclick="calculadora('5')">5</button></td>
+				<td><button onclick="calculadora('6')">6</button></td>
+				<td><button onclick="calculadora('+')">+</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="calculadora('1')">1</button></td>
+				<td><button onclick="calculadora('2')">2</button></td>
+				<td><button onclick="calculadora('3')">3</button></td>
+				<td rowspan="2"><button onclick="calculadora('=')">=</button></td>
+
+			</tr>
+			<tr>
+				<td colspan="2"><button onclick="calculadora('0')">0</button></td>
+				<td><button>.</button></td>
+			</tr>
+		</table>
+</div>
+</body>
+</html>
