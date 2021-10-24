@@ -1,2 +1,2 @@
 # Calculadora Grafica-JavaScript
-*Implementaçao completae efeiva* 
+*Implementaçao completa e efeiva* 
